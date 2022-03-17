@@ -1,0 +1,56 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HR SALARY PREDICTION</title>
+    <link rel="stylesheet" href="/static/CSS/style.css">
+</head>
+<body background="/static/images/download3.jpg"  style="background-repeat: no-repeat;background-size:100% 100%">
+     
+<!-- Input Form -->
+<div  class="input form">
+  <form action="{{url_for('predict')}}"method="post" id="input head">
+ 
+    <h1 id="heading">Salary Prediction</h1>
+             
+    <h3 id="input">Enter the Age </h3>
+    <input type="flaot" name="Age" placeholder="Age in whole number">
+         
+     <h3 id="input">Enter the Work Class </h3>
+    <input type="float" name="workclass" placeholder="Work Class(numerals only 0-8)">
+    
+    <h3 id="input">Enter Sex </h3>
+    <input type="float" name="Sex" placeholder="Male=1, Female=0">
+    
+    <h3 id="input">Enter Education </h3>
+    <input type="float" name="Education" placeholder="Education (numeral only 0-15">
+    
+    <h3 id="input">Enter Education_num </h3>
+    <input type="float" name="Education_num" placeholder="Enter eduaction num (numerals only">
+    
+    <h3 id="input">Enter occupation </h3>
+    <input type="float" name="Occupation" placeholder="occupation (numeral only 0-14"">
+    
+        
+     <h3 id="input">Enter Capital Gain </h3>
+    <input type="float" name="Capital_Gain" placeholder="Enter Capital gain (numerals only">
+    
+      <h3 id="input">Enter Capital Loss </h3>
+    <input type="float" name="Capital_Loss" placeholder="Enter Capital Loss (numerals only">
+    
+      <h3 id="input">Enter Hours Per Week </h3>
+    <input type="float" name="Hours Per Week " placeholder="Enter Hours Per Week  (numerals only">
+    
+     <h3 id="input">Enter Race </h3>
+    <input type="float" name="Race" placeholder="occupation (numeral only 0-4"">
+    
+    <br>
+    <br>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+ 
+</div>
+   
+</body>
+</html>
